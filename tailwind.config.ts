@@ -15,8 +15,8 @@ const config: Config = {
         "rojo-oscuro": "#C21F17",
       },
       fontFamily: {
-        serif: ["Georgia", "Times New Roman", "serif"],
-        sans: ["Inter", "system-ui", "sans-serif"],
+        serif: ["var(--font-gloock)", "Georgia", "serif"],
+        sans: ["var(--font-archivo)", "system-ui", "sans-serif"],
       },
     },
   },
