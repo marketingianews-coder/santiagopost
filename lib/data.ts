@@ -18,6 +18,7 @@ export type Article = {
 export const articles: Article[] = [
   {
     id: '4',
+    image: '/images/articles/4.jpg',
     slug: 'inflacion-rozaria-5-apuestas-alza-tasa-diciembre',
     title: 'La inflación rozaría el 5% y crecen las apuestas por un alza de tasa en diciembre',
     excerpt: 'Proyecciones privadas anticipan una inflación cercana al 5% anual y algunos bancos esperan que el Banco Central suba la tasa 25 puntos base en diciembre.',
@@ -30,6 +31,7 @@ export const articles: Article[] = [
   },
   {
     id: '3',
+    image: '/images/articles/3.jpg',
     slug: 'acusacion-constitucional-ministro-rabat-oficialismo-debate',
     title: 'Oposición presenta acusación constitucional contra el ministro Rabat y el oficialismo debate su rumbo',
     excerpt: 'La oposición ingresó una acusación constitucional contra el ministro Rabat por el caso de rebaja de condenas, mientras el oficialismo discute su estrategia.',
@@ -42,6 +44,7 @@ export const articles: Article[] = [
   },
   {
     id: '2',
+    image: '/images/articles/2.jpg',
     slug: 'cochilco-sube-proyeccion-cobre-6-18-caida-produccion',
     title: 'Cochilco sube la proyección del cobre a US$6,18 pese a una caída de 8,4% en la producción',
     excerpt: 'El organismo elevó a US$6,18 la libra su estimación de precio para 2026, mientras recorta la producción nacional a 4,94 millones de toneladas.',
@@ -54,6 +57,7 @@ export const articles: Article[] = [
   },
   {
     id: '1',
+    image: '/images/articles/1.jpg',
     slug: 'banco-central-tasa-4-5-mercado-no-espera-crecimiento-2026',
     title: 'Banco Central mantiene la tasa en 4,5% y el mercado ya no espera crecimiento para 2026',
     excerpt: 'El Consejo mantuvo la TPM en 4,5% y advirtió mayores riesgos para la inflación, mientras el mercado recortó a 0% su proyección de PIB para este año.',
