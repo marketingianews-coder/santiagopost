@@ -16,6 +16,54 @@ export type Article = {
 }
 
 export const articles: Article[] = [
+  {
+    id: '4',
+    slug: 'inflacion-rozaria-5-apuestas-alza-tasa-diciembre',
+    title: 'La inflación rozaría el 5% y crecen las apuestas por un alza de tasa en diciembre',
+    excerpt: 'Proyecciones privadas anticipan una inflación cercana al 5% anual y algunos bancos esperan que el Banco Central suba la tasa 25 puntos base en diciembre.',
+    category: 'finanzas',
+    type: 'noticia',
+    author: 'Redacción Santiago Post',
+    date: '2026-11-15',
+    readTime: '3 min',
+    tags: ['inflacion', 'ipc', 'tasa de interes', 'scotiabank', 'mercados'],
+  },
+  {
+    id: '3',
+    slug: 'acusacion-constitucional-ministro-rabat-oficialismo-debate',
+    title: 'Oposición presenta acusación constitucional contra el ministro Rabat y el oficialismo debate su rumbo',
+    excerpt: 'La oposición ingresó una acusación constitucional contra el ministro Rabat por el caso de rebaja de condenas, mientras el oficialismo discute su estrategia.',
+    category: 'politica',
+    type: 'noticia',
+    author: 'Redacción Santiago Post',
+    date: '2026-11-15',
+    readTime: '3 min',
+    tags: ['acusacion constitucional', 'rabat', 'gobierno', 'congreso', 'oficialismo'],
+  },
+  {
+    id: '2',
+    slug: 'cochilco-sube-proyeccion-cobre-6-18-caida-produccion',
+    title: 'Cochilco sube la proyección del cobre a US$6,18 pese a una caída de 8,4% en la producción',
+    excerpt: 'El organismo elevó a US$6,18 la libra su estimación de precio para 2026, mientras recorta la producción nacional a 4,94 millones de toneladas.',
+    category: 'energia-y-mineria',
+    type: 'noticia',
+    author: 'Redacción Santiago Post',
+    date: '2026-11-15',
+    readTime: '3 min',
+    tags: ['cobre', 'cochilco', 'codelco', 'mineria', 'litio'],
+  },
+  {
+    id: '1',
+    slug: 'banco-central-tasa-4-5-mercado-no-espera-crecimiento-2026',
+    title: 'Banco Central mantiene la tasa en 4,5% y el mercado ya no espera crecimiento para 2026',
+    excerpt: 'El Consejo mantuvo la TPM en 4,5% y advirtió mayores riesgos para la inflación, mientras el mercado recortó a 0% su proyección de PIB para este año.',
+    category: 'economia',
+    type: 'noticia',
+    author: 'Redacción Santiago Post',
+    date: '2026-11-15',
+    readTime: '3 min',
+    tags: ['banco central', 'tpm', 'tasa de interes', 'pib', 'inflacion'],
+  },
 ]
 
 export const publishedArticles = () => articles.filter((a) => !a.draft)
