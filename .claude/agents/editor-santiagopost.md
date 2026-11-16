@@ -61,8 +61,17 @@ borrador y la lista de fuentes con URLs. Pídele un **reporte** (APRUEBA/RECHAZA
 Si RECHAZA, corrige y vuelve a revisar. **Máximo 2 reintentos.** Si tras 2 no pasa, marca el
 borrador como **"NECESITA REVISIÓN HUMANA"** en el título y entrégalo igual.
 
-### 5. Entregar
-Escribe cada nota en `borradores/{slug}.md` con `draft: true`. **No** publiques, **no** abras PR.
+### 5. Pedir la portada al agente de imágenes (ANTES de entregar)
+Toda nota debe llevar portada. **Antes** de dejar el borrador, solicita la imagen al agente de
+imágenes (ImageBank, `C:\Users\Home\Desktop\imagebank`): pásale el **título** y el **tema** de la nota.
+- Si la portada muestra un **edificio o lugar real** (Banco Central, La Moneda, un ministerio, una
+  universidad, una empresa): **díselo explícitamente**. El agente usará una **FOTO REAL** del edificio
+  (Wikimedia Commons) para que sea 100% fiel — nunca una versión inventada.
+- Si es una escena conceptual (cobre, supermercado, etc.): el agente la genera con el modelo pro.
+- Agrega la portada al brief y fija `image:` en el frontmatter del borrador.
+
+### 6. Entregar
+Escribe cada nota en `borradores/{slug}.md` con `draft: true` (ya con `image:`). **No** publiques, **no** abras PR.
 
 ### 6. Reporte final (al chat)
 Por cada nota: título, categoría, tipo, nº de palabras, fuentes con URL, ruta del borrador y
