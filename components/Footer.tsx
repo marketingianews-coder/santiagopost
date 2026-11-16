@@ -1,17 +1,14 @@
 import Link from "next/link";
+import { categorias } from "@/lib/categorias";
 
-export default function Footer({ categorias }: { categorias: string[] }) {
+export default function Footer() {
   return (
     <footer className="bg-tinta text-papel mt-16">
       <div className="max-w-6xl mx-auto px-4 py-8">
         <div className="flex flex-wrap gap-4 text-sm mb-6">
           {categorias.map((c) => (
-            <Link
-              key={c}
-              href={`/categoria/${c.toLowerCase().replace(/ /g, "-")}`}
-              className="hover:text-white/70 transition-colors"
-            >
-              {c}
+            <Link key={c.slug} href={`/categoria/${c.slug}`} className="hover:text-white/70 transition-colors">
+              {c.nombre}
             </Link>
           ))}
         </div>
