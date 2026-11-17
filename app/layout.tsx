@@ -1,21 +1,25 @@
 import type { Metadata } from "next";
-import { Gloock, Archivo } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-
-// Tipografías de marca: Gloock (titulares) y Archivo (cuerpo).
-const gloock = Gloock({ subsets: ["latin"], weight: "400", variable: "--font-gloock", display: "swap" });
-const archivo = Archivo({ subsets: ["latin"], variable: "--font-archivo", display: "swap" });
+import "./home.css";
 
 export const metadata: Metadata = {
   title: { default: "Santiago Post", template: "%s · Santiago Post" },
-  description: "Economía, política y negocios de Chile",
+  description: "Política, economía, finanzas y regiones de Chile, explicadas con contexto.",
   metadataBase: new URL("https://santiagopost.cl"),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${gloock.variable} ${archivo.variable}`}>
+    <html lang="es">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Gloock&family=Newsreader:ital,wght@0,400;0,600;0,700;1,400&family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         {children}
         <Analytics />
