@@ -6,9 +6,9 @@ export default function Header() {
   return (
     <header className="bg-papel border-b-2 border-tinta">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="py-5 flex justify-center border-b border-tinta/20">
+        <div className="py-7 flex justify-center border-b border-tinta/20">
           <Link href="/">
-            <Image src="/logo-claro.svg" alt="Santiago Post" width={200} height={92} priority />
+            <Image src="/logo-claro.svg" alt="Santiago Post" width={320} height={147} priority />
           </Link>
         </div>
         <nav className="flex flex-wrap justify-center gap-x-6 gap-y-1 py-2 text-sm">
