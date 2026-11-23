@@ -17,6 +17,46 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    id: '26', image: '/images/articles/26.jpg',
+    slug: 'paro-docente-24n-la-semana-que-presiona-al-presupuesto-2027',
+    title: 'Paro docente 24N: la semana que presiona al Presupuesto 2027',
+    excerpt: 'El paro docente llega en la recta final del Presupuesto 2027 (plazo 29N). Análisis de los tres caminos del Gobierno y el costo político de cada uno.',
+    category: 'politica', type: 'analisis', author: 'Redacción Santiago Post', date: '2026-11-23', readTime: '5 min',
+    tags: ['paro docente', 'presupuesto 2027', 'kast', 'educacion', 'politica'],
+  },
+  {
+    id: '27', image: '/images/articles/27.jpg',
+    slug: 'sala-cuna-universal-el-impacto-economico-de-140-mil-empleos-femeninos',
+    title: 'Sala Cuna Universal: el impacto económico de 140.000 empleos femeninos',
+    excerpt: 'La Sala Cuna Universal pasa al Senado con proyección de 140.000 empleos femeninos. Análisis del impacto en PIB, consumo y el nudo del financiamiento.',
+    category: 'economia', type: 'analisis', author: 'Redacción Santiago Post', date: '2026-11-23', readTime: '5 min',
+    tags: ['sala cuna', 'empleo femenino', 'economia', 'pib', 'senado'],
+  },
+  {
+    id: '28', image: '/images/articles/28.jpg',
+    slug: 'desempleo-9-8-el-mercado-laboral-en-recesion-tecnica',
+    title: 'Desempleo al 9,8%: el mercado laboral en recesión técnica',
+    excerpt: 'El desempleo en 9,8% con 10,5% femenino en contexto de recesión técnica. Análisis sectorial y la aritmética de los empleos que necesita Chile Despega.',
+    category: 'economia', type: 'analisis', author: 'Redacción Santiago Post', date: '2026-11-23', readTime: '5 min',
+    tags: ['desempleo', 'mercado laboral', 'recesion', 'chile despega', 'economia'],
+  },
+  {
+    id: '29', image: '/images/articles/29.jpg',
+    slug: 'el-costo-de-vida-y-la-confianza-ciudadana-el-desafio-politico-de-kast',
+    title: 'El costo de vida y la confianza ciudadana: el desafío político de Kast',
+    excerpt: 'El costo de vida es la principal preocupación ciudadana. Análisis de cómo el IPC, el dólar y el desempleo erosionan la confianza en el Gobierno.',
+    category: 'politica', type: 'analisis', author: 'Redacción Santiago Post', date: '2026-11-23', readTime: '5 min',
+    tags: ['costo de vida', 'kast', 'confianza', 'politica', 'economia'],
+  },
+  {
+    id: '30', image: '/images/articles/30.jpg',
+    slug: 'semana-de-protestas-chile-el-ciclo-social-antes-del-29-de-noviembre',
+    title: 'Semana de protestas: el ciclo social antes del 29 de noviembre',
+    excerpt: 'La semana 23-28N como ciclo de presión antes del deadline presupuestario. Los tres escenarios posibles para la aprobación del Presupuesto 2027.',
+    category: 'politica', type: 'analisis', author: 'Redacción Santiago Post', date: '2026-11-23', readTime: '5 min',
+    tags: ['protestas', 'presupuesto 2027', 'politica', '29N', 'kast'],
+  },
+  {
     id: '20', image: '/images/articles/20.jpg',
     slug: 'senado-despacha-presupuesto-2027-el-mapa-de-ganadores-y-perdedores',
     title: 'Senado despacha el Presupuesto 2027: el mapa de ganadores y perdedores',
