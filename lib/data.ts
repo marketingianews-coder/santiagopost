@@ -17,6 +17,46 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    id: '31', image: '/images/articles/31.jpg',
+    slug: 'las-turbulencias-que-remecen-el-plan-economico-de-kast',
+    title: 'Las turbulencias que remecen el plan económico de Kast',
+    excerpt: 'El ajuste fiscal, un desempleo en 9,8% y las advertencias de especialistas ponen a prueba la promesa económica del Gobierno. Análisis del momento más frágil del plan.',
+    category: 'politica', type: 'analisis', author: 'Redacción Santiago Post', date: '2026-11-24', readTime: '5 min',
+    tags: ['kast','ajuste fiscal','desempleo','economia','gobernabilidad'],
+  },
+  {
+    id: '32', image: '/images/articles/32.jpg',
+    slug: 'cobre-repunta-578-peso-se-recupera-alivio-o-espejismo',
+    title: 'Cobre repunta a US$5,78 y el peso se recupera: ¿alivio o espejismo?',
+    excerpt: 'El cobre tocó US$5,78 la libra y el dólar bajó a $1.016. Analizamos si la mejora responde a fundamentos sólidos o a vientos externos que pueden revertirse.',
+    category: 'finanzas', type: 'analisis', author: 'Redacción Santiago Post', date: '2026-11-24', readTime: '5 min',
+    tags: ['cobre','dolar','tipo de cambio','mercados','economia chilena'],
+  },
+  {
+    id: '33', image: '/images/articles/33.jpg',
+    slug: 'presupuesto-2027-comision-mixta-el-pulso-final',
+    title: 'Presupuesto 2027 en comisión mixta: el pulso final',
+    excerpt: 'El Presupuesto 2027 llegó a comisión mixta en su tramo más decisivo. Qué partidas están en disputa entre Gobierno y oposición y los escenarios posibles del desenlace.',
+    category: 'politica', type: 'analisis', author: 'Redacción Santiago Post', date: '2026-11-24', readTime: '5 min',
+    tags: ['presupuesto 2027','comision mixta','congreso','gasto publico','oposicion'],
+  },
+  {
+    id: '34', image: '/images/articles/34.jpg',
+    slug: 'crisis-de-gabinete-el-costo-politico-de-la-gestion-kast',
+    title: 'Crisis de gabinete: el costo político de la gestión Kast',
+    excerpt: 'Con el ministro de Justicia al borde de la destitución y otros secretarios cuestionados, el Gobierno enfrenta su primera gran crisis de gabinete. El costo en gobernabilidad.',
+    category: 'politica', type: 'analisis', author: 'Redacción Santiago Post', date: '2026-11-24', readTime: '5 min',
+    tags: ['crisis de gabinete','kast','ministros','gobernabilidad','la moneda'],
+  },
+  {
+    id: '35', image: '/images/articles/35.jpg',
+    slug: 'pobreza-y-desempleo-el-riesgo-social-del-bajo-crecimiento',
+    title: 'Pobreza y desempleo: el riesgo social del bajo crecimiento',
+    excerpt: 'Con el desempleo en 9,8% y una economía que no despega, la pobreza amenaza con revertir años de avances. Qué sectores están más expuestos y qué puede hacer la política pública.',
+    category: 'economia', type: 'analisis', author: 'Redacción Santiago Post', date: '2026-11-24', readTime: '6 min',
+    tags: ['pobreza','desempleo','crecimiento','politica social','vulnerabilidad'],
+  },
+  {
     id: '26', image: '/images/articles/26.jpg',
     slug: 'paro-docente-24n-la-semana-que-presiona-al-presupuesto-2027',
     title: 'Paro docente 24N: la semana que presiona al Presupuesto 2027',
