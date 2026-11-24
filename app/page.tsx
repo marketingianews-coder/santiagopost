@@ -4,7 +4,7 @@ import type { Article } from "@/lib/data";
 import { latestArticles, articlesByCategory } from "@/lib/data";
 import { categorias, nombreCategoria } from "@/lib/categorias";
 
-export const dynamic = "force-static";
+export const revalidate = 3600; // ISR: refresca indicadores cada hora
 
 const HUES = [215, 200, 165, 28, 350, 230, 190, 40, 260];
 
@@ -31,8 +31,37 @@ function Card({ a, h, seed }: { a: Article; h: number; seed: number }) {
 
 const Logo = () => (
   // eslint-disable-next-line @next/next/no-img-element
-  <img src="/logo-oscuro.svg" alt="Santiago Post" style={{ height: 76 }} />
+  <img src="/logo-oscuro.svg" alt="Santiago Post" style={{ height: 130, width: 'auto' }} />
 );
+
+// Indicadores económicos reales desde mindicador.cl (revalida cada hora).
+async function Indicadores() {
+  let d: Record<string, { valor?: number }> | null = null;
+  try {
+    const res = await fetch("https://mindicador.cl/api", { next: { revalidate: 3600 } });
+    if (res.ok) d = await res.json();
+  } catch {
+    d = null;
+  }
+  const fmt = (v: number | undefined, dec = 2) =>
+    v == null ? "—" : v.toLocaleString("es-CL", { minimumFractionDigits: dec, maximumFractionDigits: dec });
+  const rows: [string, string][] = [
+    ["Dólar", d?.dolar?.valor != null ? `$ ${fmt(d.dolar.valor)}` : "—"],
+    ["UF", d?.uf?.valor != null ? `$ ${fmt(d.uf.valor)}` : "—"],
+    ["IPC mensual", d?.ipc?.valor != null ? `${fmt(d.ipc.valor, 1)} %` : "—"],
+    ["Cobre (lb)", d?.libra_cobre?.valor != null ? `US$ ${fmt(d.libra_cobre.valor)}` : "—"],
+    ["UTM", d?.utm?.valor != null ? `$ ${fmt(d.utm.valor, 0)}` : "—"],
+  ];
+  return (
+    <table className="ind" style={{ marginTop: 8 }}>
+      <tbody>
+        {rows.map(([k, v]) => (
+          <tr key={k}><td>{k}</td><td>{v}</td></tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
 
 export default function Home() {
   const posts = latestArticles(20);
@@ -95,15 +124,7 @@ export default function Home() {
                 </div>
                 <div className="col">
                   <div className="k">Indicadores</div>
-                  <table className="ind" style={{ marginTop: 8 }}>
-                    <tbody>
-                      <tr><td>Dólar</td><td>$ 000,00</td></tr>
-                      <tr><td>UF</td><td>$ 00.000,00</td></tr>
-                      <tr><td>IPC mensual</td><td>0,0 %</td></tr>
-                      <tr><td>Cobre (lb)</td><td>US$ 0,00</td></tr>
-                      <tr><td>IPSA</td><td>0.000</td></tr>
-                    </tbody>
-                  </table>
+                  <Indicadores />
                   <div className="box">
                     <h4>El dato del día</h4>
                     <div style={{ fontSize: 15, lineHeight: 1.4 }}>Un número, un gráfico y una explicación en tres líneas.</div>
