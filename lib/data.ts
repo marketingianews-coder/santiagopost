@@ -17,6 +17,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    id: '36', image: '/images/articles/36.jpg',
+    slug: 'desempleo-en-chile-radiografia-del-mercado-laboral',
+    title: 'Desempleo en Chile: radiografía de un mercado laboral bajo presión',
+    excerpt: 'El desempleo llegó a 9,8% y golpea más a las mujeres. Qué sectores destruyen empleo, por qué el paro femenino es más alto y qué herramientas de política laboral existen.',
+    category: 'economia', type: 'analisis', author: 'Redacción Santiago Post', date: '2026-11-25', readTime: '5 min',
+    tags: ['desempleo','mercado laboral','economia','empleo femenino','chile'],
+  },
+  {
     id: '31', image: '/images/articles/31.jpg',
     slug: 'las-turbulencias-que-remecen-el-plan-economico-de-kast',
     title: 'Las turbulencias que remecen el plan económico de Kast',
